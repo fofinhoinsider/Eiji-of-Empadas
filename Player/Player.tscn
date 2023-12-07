@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://c8vn4jjs2dg0u"]
+[gd_scene load_steps=36 format=3 uid="uid://c8vn4jjs2dg0u"]
 
 [ext_resource type="Script" path="res://Player/Player.gd" id="1_m3tp6"]
 [ext_resource type="Texture2D" uid="uid://dkk0ghojesq80" path="res://Sunny-land-files/Sunny-land-assets-files/PNG/spritesheets/player-hurt.png" id="1_wuvcd"]
@@ -9,10 +9,17 @@
 [ext_resource type="Texture2D" uid="uid://bwv4snh6wmqo1" path="res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/eiji/eiji-normal/eiji-jump-01.png" id="7_mnied"]
 [ext_resource type="Texture2D" uid="uid://ba0ryo2jvnveg" path="res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/eiji/eiji-normal/eiji-jump-02.png" id="8_u1ld2"]
 [ext_resource type="Texture2D" uid="uid://en476xdmixo" path="res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/eiji/eiji-normal/eiji-jump-03.png" id="9_tu0fp"]
+[ext_resource type="Texture2D" uid="uid://c7trxuvhwm8if" path="res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/eiji/eiji-bucho-cheio/eiji-bc-jump-01.png" id="10_1n47j"]
 [ext_resource type="Texture2D" uid="uid://dorcyclhe2rdr" path="res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/eiji/eiji-normal/eiji-walk-01.png" id="10_vacir"]
+[ext_resource type="Texture2D" uid="uid://dx4jigli34xn8" path="res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/eiji/eiji-bucho-cheio/eiji-bc-jump-02.png" id="11_ob7x1"]
 [ext_resource type="Texture2D" uid="uid://rh1iaeo2ccq7" path="res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/eiji/eiji-normal/eiji-walk-02.png" id="11_vf5tr"]
+[ext_resource type="Texture2D" uid="uid://8e5mb06o44gf" path="res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/eiji/eiji-bucho-cheio/eiji-bc-jump-03.png" id="12_ecjsg"]
 [ext_resource type="Texture2D" uid="uid://bd2c7nu2yufgd" path="res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/eiji/eiji-normal/eiji-walk-03.png" id="12_s2xcf"]
 [ext_resource type="Texture2D" uid="uid://4ayicies3gpw" path="res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/eiji/eiji-normal/eiji-walk-04.png" id="13_tvkqs"]
+[ext_resource type="Texture2D" uid="uid://dgr1xxwmsihq7" path="res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/eiji/eiji-bucho-cheio/eiji-bc-walk-01.png" id="17_0yck3"]
+[ext_resource type="Texture2D" uid="uid://bbwshhsfvv3qj" path="res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/eiji/eiji-bucho-cheio/eiji-bc-walk-02.png" id="18_jhifp"]
+[ext_resource type="Texture2D" uid="uid://bideogfel6i5j" path="res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/eiji/eiji-bucho-cheio/eiji-bc-walk-03.png" id="19_r7t6i"]
+[ext_resource type="Texture2D" uid="uid://dp45dg0uqk7lg" path="res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/eiji/eiji-bucho-cheio/eiji-bc-walk-04.png" id="20_vaeuu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_txh4d"]
 size = Vector2(31, 50)
@@ -74,7 +81,16 @@ animations = [{
 "name": &"Jump",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_1n47j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_ob7x1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_ecjsg")
+}],
 "loop": true,
 "name": &"JumpBC",
 "speed": 5.0
@@ -96,7 +112,19 @@ animations = [{
 "name": &"Run",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_0yck3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_jhifp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_r7t6i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_vaeuu")
+}],
 "loop": true,
 "name": &"RunBC",
 "speed": 5.0
@@ -161,6 +189,33 @@ tracks/1/keys = {
 "values": [0, 1, 2, 3]
 }
 
+[sub_resource type="Animation" id="Animation_qux0y"]
+length = 0.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [&"IdleBC", &"IdleBC"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, 1]
+}
+
 [sub_resource type="Animation" id="Animation_6tetb"]
 resource_name = "Jump"
 length = 0.6
@@ -204,6 +259,18 @@ tracks/0/keys = {
 "update": 1,
 "values": [1]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"IdleBC"]
+}
 
 [sub_resource type="Animation" id="Animation_vvugy"]
 resource_name = "Run"
@@ -234,7 +301,58 @@ tracks/1/keys = {
 "values": [0, 1, 2, 3, 4, 5]
 }
 
-[sub_resource type="Animation" id="Animation_qux0y"]
+[sub_resource type="Animation" id="Animation_akcql"]
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"JumpBC"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [0, 1, 2]
+}
+
+[sub_resource type="Animation" id="Animation_i0sam"]
+length = 0.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.1),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"RunBC"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_36ucx"]
 _data = {
@@ -243,8 +361,10 @@ _data = {
 "Idle": SubResource("Animation_8m73y"),
 "IdleBC": SubResource("Animation_qux0y"),
 "Jump": SubResource("Animation_6tetb"),
+"JumpBC": SubResource("Animation_akcql"),
 "RESET": SubResource("Animation_tx6pv"),
-"Run": SubResource("Animation_vvugy")
+"Run": SubResource("Animation_vvugy"),
+"RunBC": SubResource("Animation_i0sam")
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_y4tkm"]
@@ -259,8 +379,7 @@ shape = SubResource("RectangleShape2D_txh4d")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -16)
 sprite_frames = SubResource("SpriteFrames_3ltfp")
-animation = &"Idle"
-frame = 1
+animation = &"IdleBC"
 flip_h = true
 metadata/_edit_lock_ = true
 
@@ -270,6 +389,7 @@ limit_left = 0
 limit_top = 0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "JumpBC"
 libraries = {
 "": SubResource("AnimationLibrary_36ucx"),
 "IdleBC": SubResource("AnimationLibrary_y4tkm")

@@ -1,7 +1,1 @@
-res://world.tscn
-res://Frog.gd
-res://Global/Game.gd
-res://Collectables/Cherry.tscn
-res://Player/Player.gd
-res://Frog.tscn
 res://Player/Player.tscn
