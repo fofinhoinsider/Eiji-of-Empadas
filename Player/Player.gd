@@ -11,6 +11,8 @@ var has_jumped_on_air = false
 @onready var anim = get_node("AnimationPlayer")
 
 func _physics_process(delta):
+	var suffix = "BC" if Game.Gold >= 10 else ""
+
 	# Add the gravity.
 	if not is_on_floor():
 		velocity.y += gravity * delta
@@ -20,13 +22,10 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("ui_up"):
 		if is_on_floor():
 			velocity.y = JUMP_VELOCITY
-			if Game.Gold > 10:
-				anim.play("JumpBC")
-			else:
-				anim.play("Jump")
-		elif not has_jumped_on_air and Game.Gold > 10:
+			anim.play("Jump" + suffix)
+		elif not has_jumped_on_air and Game.Gold >= 10:
 			velocity.y = JUMP_VELOCITY			
-			anim.play("JumpBC")
+			anim.play("Jump" + suffix)
 			has_jumped_on_air = 1
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
@@ -39,22 +38,13 @@ func _physics_process(delta):
 	if direction:
 		velocity.x = direction * SPEED
 		if velocity.y == 0:
-			if Game.Gold > 10:
-				anim.play("RunBC")
-			else:
-				anim.play("Run")
+			anim.play("Run" + suffix)
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		if velocity.y == 0:
-			if Game.Gold > 10:
-				anim.play("IdleBC")
-			else:
-				anim.play("Idle")
+			anim.play("Idle" + suffix)
 	if velocity.y > 0:
-		if Game.Gold > 10:
-			anim.play("IdleBC")
-		else:
-			anim.play("Fall")
+		anim.play("Fall" + suffix)
 	move_and_slide()
 	
 	

@@ -1,21 +1,23 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1701389460
+::res://::1701916573
 BG.gd::GDScript::-1::1701034651::0::1::::<>ParallaxBackground<>::
 BG.tscn::PackedScene::2262312464235545552::1701038066::0::1::::<><>::res://BG.gd<>uid://cb5suyu343d1n
 Frog.gd::GDScript::-1::1701386555::0::1::::<>CharacterBody2D<>::
 Frog.tscn::PackedScene::2052889069840593964::1701386556::0::1::::<><>::uid://dqn66wsdxt4hv::::res://Sunny-land-files/Sunny-land-assets-files/PNG/spritesheets/frog-idle.png<>uid://cxoq4mfrpsym5::::res://Sunny-land-files/Sunny-land-assets-files/PNG/spritesheets/enemy-deadth.png<>res://Frog.gd<>uid://0vxg673nr403::::res://Sunny-land-files/Sunny-land-assets-files/PNG/spritesheets/frog-jump.png
 icon.svg::CompressedTexture2D::865371698210220884::1701034651::1701034651::1::::<><>::
-main.gd::GDScript::-1::1701034651::0::1::::<>Node2D<>::
-main.tscn::PackedScene::2880387758262070191::1701038066::0::1::::<><>::res://main.gd<>uid://7h47q4d1xsps
-world.tscn::PackedScene::3302732010777028173::1701389221::0::1::::<><>::uid://riq0bcd0ldar::::res://sunny-land-phaser-project/sunny-land/assets/environment/tileset.png<>res://BG.gd<>uid://c8vn4jjs2dg0u::::res://Player/Player.tscn<>uid://cb5suyu343d1n::::res://sunny-land-phaser-project/sunny-land/assets/environment/back.png<>uid://4io1vg8e1cwi::::res://Frog.tscn
+main.gd::GDScript::-1::1701916023::0::1::::<>Node2D<>::
+main.tscn::PackedScene::2880387758262070191::1701916572::0::1::::<><>::res://main.gd<>uid://7h47q4d1xsps::::res://BG.tscn
+README.md::TextFile::-1::1701909443::0::1::::<><>::
+fase.tscn::PackedScene::4364897821063083049::1701916573::0::1::::<><>::uid://c8vn4jjs2dg0u::::res://Player/Player.tscn
+world.tscn::PackedScene::3302732010777028173::1701916573::0::1::::<><>::uid://riq0bcd0ldar::::res://sunny-land-phaser-project/sunny-land/assets/environment/tileset.png<>res://BG.gd<>uid://c8vn4jjs2dg0u::::res://Player/Player.tscn<>uid://cb5suyu343d1n::::res://sunny-land-phaser-project/sunny-land/assets/environment/back.png<>uid://4io1vg8e1cwi::::res://Frog.tscn
 ::res://Collectables/::1701386855
 Cherry.tscn::PackedScene::711660153398299726::1701386855::0::1::::<><>::uid://b62g1anf42d6r::::res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/cherry/cherry-1.png<>uid://bxck78rvjv6vj::::res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/cherry/cherry-2.png<>uid://ddb37tu77yoq5::::res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/cherry/cherry-3.png<>uid://dyuacih3p2432::::res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/cherry/cherry-4.png<>uid://c4r83aknvuhsm::::res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/cherry/cherry-5.png<>uid://bparnwmuqpoap::::res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/cherry/cherry-6.png<>uid://bud2cpiiceygm::::res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/cherry/cherry-7.png
 ::res://Global/::1701385737
 Game.gd::GDScript::-1::1701385737::0::1::::<>Node<>::
 Utils.gd::GDScript::-1::1701034651::0::1::::<>Node<>::
-::res://Player/::1701389221
-Player.gd::GDScript::-1::1701385879::0::1::::<>CharacterBody2D<>::
-Player.tscn::PackedScene::7133266736673167558::1701389221::0::1::::<><>::res://Player/Player.gd<>uid://cig0u3xogo10h::::res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/idle/player-idle-1.png<>uid://dkk0ghojesq80::::res://Sunny-land-files/Sunny-land-assets-files/PNG/spritesheets/player-hurt.png<>uid://btdvb1b5bbpnr::::res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/idle/player-idle-2.png<>uid://dnqdo4gkdmyte::::res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/idle/player-idle-3.png<>uid://ce3li46886m1a::::res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/idle/player-idle-4.png<>uid://bwv4snh6wmqo1::::res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/eiji/eiji-normal/eiji-jump-01.png<>uid://ba0ryo2jvnveg::::res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/eiji/eiji-normal/eiji-jump-02.png<>uid://en476xdmixo::::res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/eiji/eiji-normal/eiji-jump-03.png<>uid://dorcyclhe2rdr::::res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/eiji/eiji-normal/eiji-walk-01.png<>uid://rh1iaeo2ccq7::::res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/eiji/eiji-normal/eiji-walk-02.png<>uid://bd2c7nu2yufgd::::res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/eiji/eiji-normal/eiji-walk-03.png<>uid://4ayicies3gpw::::res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/eiji/eiji-normal/eiji-walk-04.png
+::res://Player/::1701916572
+Player.gd::GDScript::-1::1701915747::0::1::::<>CharacterBody2D<>::
+Player.tscn::PackedScene::7133266736673167558::1701916572::0::1::::<><>::res://Player/Player.gd<>uid://dkk0ghojesq80::::res://Sunny-land-files/Sunny-land-assets-files/PNG/spritesheets/player-hurt.png<>uid://cshjhgy1v6141::::res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/eiji/eiji-normal/eiji-idle-01.png<>uid://bnvhebiku0do1::::res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/eiji/eiji-normal/eiji-idle-02.png<>uid://bxsnmt47bk4fn::::res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/eiji/eiji-bucho-cheio/eiji-bc-idle-01.png<>uid://cbf1uc54j8qu7::::res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/eiji/eiji-bucho-cheio/eiji-bc-idle-02.png<>uid://bwv4snh6wmqo1::::res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/eiji/eiji-normal/eiji-jump-01.png<>uid://ba0ryo2jvnveg::::res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/eiji/eiji-normal/eiji-jump-02.png<>uid://en476xdmixo::::res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/eiji/eiji-normal/eiji-jump-03.png<>uid://c7trxuvhwm8if::::res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/eiji/eiji-bucho-cheio/eiji-bc-jump-01.png<>uid://dorcyclhe2rdr::::res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/eiji/eiji-normal/eiji-walk-01.png<>uid://dx4jigli34xn8::::res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/eiji/eiji-bucho-cheio/eiji-bc-jump-02.png<>uid://rh1iaeo2ccq7::::res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/eiji/eiji-normal/eiji-walk-02.png<>uid://8e5mb06o44gf::::res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/eiji/eiji-bucho-cheio/eiji-bc-jump-03.png<>uid://bd2c7nu2yufgd::::res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/eiji/eiji-normal/eiji-walk-03.png<>uid://4ayicies3gpw::::res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/eiji/eiji-normal/eiji-walk-04.png<>uid://dgr1xxwmsihq7::::res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/eiji/eiji-bucho-cheio/eiji-bc-walk-01.png<>uid://bbwshhsfvv3qj::::res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/eiji/eiji-bucho-cheio/eiji-bc-walk-02.png<>uid://bideogfel6i5j::::res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/eiji/eiji-bucho-cheio/eiji-bc-walk-03.png<>uid://dp45dg0uqk7lg::::res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/eiji/eiji-bucho-cheio/eiji-bc-walk-04.png
 ::res://Sunny Land houses/::1701034651
 ::res://Sunny Land houses/Sunny Land Trees Props Pack/::1701034651
 ::res://Sunny Land houses/Sunny Land Trees Props Pack/previews/::1701034651
@@ -28,7 +30,7 @@ rock-2.png::CompressedTexture2D::5311159058822329321::1701034651::1701034651::1:
 straw-house.png::CompressedTexture2D::8439254852332777845::1701034651::1701034651::1::::<><>::
 tree-house.png::CompressedTexture2D::8805500586276607728::1701034651::1701034651::1::::<><>::
 wooden-house.png::CompressedTexture2D::8463796643665960874::1701034651::1701034651::1::::<><>::
-::res://Sunny-land-files/::1701387981
+::res://Sunny-land-files/::1701390233
 ::res://Sunny-land-files/Sunny-land-assets-files/::1701387981
 ::res://Sunny-land-files/Sunny-land-assets-files/PNG/::1701387981
 ::res://Sunny-land-files/Sunny-land-assets-files/PNG/environment/::1701034651
@@ -60,7 +62,7 @@ spike-skull.png::CompressedTexture2D::3521168608938010790::1701034651::170103465
 spikes-top.png::CompressedTexture2D::1517874983381801018::1701034651::1701034651::1::::<><>::
 spikes.png::CompressedTexture2D::2537799694411155886::1701034651::1701034651::1::::<><>::
 tree.png::CompressedTexture2D::3077782412177357808::1701034651::1701034651::1::::<><>::
-::res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/::1701387983
+::res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/::1701916742
 ::res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/cherry/::1701034651
 cherry-1.png::CompressedTexture2D::4618423788779299011::1701034651::1701034651::1::::<><>::
 cherry-2.png::CompressedTexture2D::4005558918707849447::1701034651::1701034651::1::::<><>::
@@ -69,6 +71,15 @@ cherry-4.png::CompressedTexture2D::8885085857354850383::1701034651::1701034651::
 cherry-5.png::CompressedTexture2D::6845465933766350364::1701034651::1701034651::1::::<><>::
 cherry-6.png::CompressedTexture2D::3440309917443432127::1701034651::1701034651::1::::<><>::
 cherry-7.png::CompressedTexture2D::3798034420683461112::1701034651::1701034651::1::::<><>::
+::res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/coxinha/::1701916794
+coxinha-abrindo-olho-01.png::CompressedTexture2D::4151545955629821057::1701373534::1701917039::1::::<><>::
+coxinha-abrindo-olho-02.png::CompressedTexture2D::121683660831585276::1701373554::1701917039::1::::<><>::
+coxinha-olho-aberto-01.png::CompressedTexture2D::3030943035715422732::1701373580::1701917039::1::::<><>::
+coxinha-olho-aberto-02.png::CompressedTexture2D::1276563108216472159::1701373600::1701917039::1::::<><>::
+coxinha-olho-aberto-03.png::CompressedTexture2D::4678692793129471710::1701373620::1701917039::1::::<><>::
+coxinha-olho-aberto-04.png::CompressedTexture2D::5476766991167141513::1701373636::1701917039::1::::<><>::
+coxinha-olho-aberto-05.png::CompressedTexture2D::7633470909270513890::1701373654::1701917039::1::::<><>::
+coxinha-olho-fechado.png::CompressedTexture2D::2009257055399116729::1701373504::1701917039::1::::<><>::
 ::res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/eagle/::1701034651
 eagle-attack-1.png::CompressedTexture2D::6426190360401207835::1701034651::1701034651::1::::<><>::
 eagle-attack-2.png::CompressedTexture2D::7939912307592889775::1701034651::1701034651::1::::<><>::
@@ -85,7 +96,7 @@ eiji-bc-walk-01.png::CompressedTexture2D::7617110492390607036::1701373040::17013
 eiji-bc-walk-02.png::CompressedTexture2D::2503131640073608113::1701373056::1701388127::1::::<><>::
 eiji-bc-walk-03.png::CompressedTexture2D::2954392758207066893::1701373070::1701388127::1::::<><>::
 eiji-bc-walk-04.png::CompressedTexture2D::8273788882372962572::1701373084::1701388127::1::::<><>::
-::res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/eiji/eiji-normal/::1701389459
+::res://Sunny-land-files/Sunny-land-assets-files/PNG/sprites/eiji/eiji-normal/::1701389460
 eiji-idle-01.png::CompressedTexture2D::6051250504067476324::1701372828::1701389460::1::::<><>::
 eiji-idle-02.png::CompressedTexture2D::3342659811311615178::1701389358::1701389443::1::::<><>::
 eiji-jump-01.png::CompressedTexture2D::3975720808701155350::1701372932::1701388127::1::::<><>::

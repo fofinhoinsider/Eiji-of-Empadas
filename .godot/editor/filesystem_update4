@@ -1,1 +1,5 @@
 res://Player/Player.tscn
+res://fase.tscn
+res://main.gd
+res://world.tscn
+res://main.tscn

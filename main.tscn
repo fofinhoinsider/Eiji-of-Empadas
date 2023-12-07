@@ -13,6 +13,13 @@ offset_right = 714.0
 offset_bottom = 261.0
 text = "Play"
 
+[node name="Fase" type="Button" parent="."]
+offset_left = 678.0
+offset_top = 242.0
+offset_right = 805.0
+offset_bottom = 333.0
+text = "Fase"
+
 [node name="Quit" type="Button" parent="."]
 offset_left = 432.0
 offset_top = 358.0
@@ -23,4 +30,5 @@ text = "Quit"
 [node name="BG" parent="." instance=ExtResource("2_lh1wr")]
 
 [connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Fase" to="." method="_on_fase_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
