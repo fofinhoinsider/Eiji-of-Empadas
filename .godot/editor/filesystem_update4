@@ -1,5 +1,14 @@
+res://menu.tscn
+res://main.tscn
 res://Player/Player.tscn
 res://fase.tscn
-res://main.gd
 res://world.tscn
-res://main.tscn
+res://Coxinha.tscn
+res://Plataformas Eiji of Empadas.tscn
+res://menu.gd
+res://Coxinha.gd
+res://RichTextLabel.gd
+res://Player/Player.gd
+res://Label.gd
+res://options_menu.tscn
+res://Menu.gd

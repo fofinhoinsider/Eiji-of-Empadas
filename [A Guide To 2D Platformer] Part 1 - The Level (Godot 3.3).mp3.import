@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://25mlgvhw53fv"
+path="res://.godot/imported/[A Guide To 2D Platformer] Part 1 - The Level (Godot 3.3).mp3-83b0690c57be0fd32eb8b0b1d60bd728.mp3str"
+
+[deps]
+
+source_file="res://[A Guide To 2D Platformer] Part 1 - The Level (Godot 3.3).mp3"
+dest_files=["res://.godot/imported/[A Guide To 2D Platformer] Part 1 - The Level (Godot 3.3).mp3-83b0690c57be0fd32eb8b0b1d60bd728.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

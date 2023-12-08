@@ -1,6 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://b3gnh2gcun0ob"]
+[gd_scene load_steps=8 format=3 uid="uid://b3gnh2gcun0ob"]
 
 [ext_resource type="PackedScene" uid="uid://c8vn4jjs2dg0u" path="res://Player/Player.tscn" id="1_mw205"]
+[ext_resource type="PackedScene" uid="uid://dlhste3e65j3g" path="res://Coxinha.tscn" id="2_gfdn2"]
+[ext_resource type="PackedScene" uid="uid://key66gxt5vle" path="res://Collectables/Cherry.tscn" id="3_5fpxj"]
+[ext_resource type="Script" path="res://HP.gd" id="4_x5bie"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6kewu"]
 size = Vector2(1705, 282)
@@ -12,10 +15,7 @@ size = Vector2(128.5, 522.5)
 size = Vector2(32, 32)
 
 [node name="fase" type="Node2D"]
-position = Vector2(56, 552)
-
-[node name="Player" parent="." instance=ExtResource("1_mw205")]
-position = Vector2(9, -64)
+position = Vector2(40, 264)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
@@ -42,9 +42,37 @@ offset_left = -152.0
 offset_top = -24.0
 offset_right = 1680.0
 offset_bottom = 256.0
+metadata/_edit_use_anchors_ = true
 
 [node name="Panel" type="Panel" parent="."]
 offset_left = 336.0
 offset_top = -56.0
 offset_right = 368.0
 offset_bottom = -24.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Player" type="Node2D" parent="."]
+
+[node name="Player" parent="Player" instance=ExtResource("1_mw205")]
+position = Vector2(9, -64)
+
+[node name="Mobs" type="Node2D" parent="."]
+
+[node name="Coxinha" parent="Mobs" instance=ExtResource("2_gfdn2")]
+position = Vector2(840, -40)
+
+[node name="Cherry" parent="." instance=ExtResource("3_5fpxj")]
+position = Vector2(464, -40)
+
+[node name="Cherry2" parent="." instance=ExtResource("3_5fpxj")]
+position = Vector2(536, -40)
+
+[node name="Cherry3" parent="." instance=ExtResource("3_5fpxj")]
+position = Vector2(616, -40)
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="HP" type="RichTextLabel" parent="UI"]
+offset_right = 224.0
+offset_bottom = 72.0
+script = ExtResource("4_x5bie")

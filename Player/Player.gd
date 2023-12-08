@@ -11,7 +11,7 @@ var has_jumped_on_air = false
 @onready var anim = get_node("AnimationPlayer")
 
 func _physics_process(delta):
-	var suffix = "BC" if Game.Gold >= 10 else ""
+	var suffix = "BC" if Game.Gold >= 4 else ""
 
 	# Add the gravity.
 	if not is_on_floor():
@@ -23,7 +23,7 @@ func _physics_process(delta):
 		if is_on_floor():
 			velocity.y = JUMP_VELOCITY
 			anim.play("Jump" + suffix)
-		elif not has_jumped_on_air and Game.Gold >= 10:
+		elif not has_jumped_on_air and Game.Gold >= 4:
 			velocity.y = JUMP_VELOCITY			
 			anim.play("Jump" + suffix)
 			has_jumped_on_air = 1
@@ -44,11 +44,12 @@ func _physics_process(delta):
 		if velocity.y == 0:
 			anim.play("Idle" + suffix)
 	if velocity.y > 0:
-		anim.play("Fall" + suffix)
+		anim.play("Fall" + suffix)	
 	move_and_slide()
 	
 	
-	if Game.playerHP <= 0:
+	if Game.playerHP <= 0 or position.y > 2000:
 		queue_free()
 		Game.playerHP = 3
-		get_tree().change_scene_to_file("res://main.tscn")
+		Game.Gold = 0
+		get_tree().change_scene_to_file("res://menu.tscn")
